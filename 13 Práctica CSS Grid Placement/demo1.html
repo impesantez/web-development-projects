@@ -15,8 +15,10 @@
       height: 100vh;
       display: grid;
       gap: 3rem;
-      grid-template-columns: 1fr 1fr 1.5fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-items: center;
+      background-color: white;
     }
 
     .item {
@@ -24,15 +26,12 @@
       color: white;
       font-family: Arial, Helvetica, sans-serif;
       background-color: blueviolet;
+      width: 10rem;
+      height: 15rem; 
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-
-
-    .cowboy {
-      background-color: #00B9FF;
-      grid-column: span 2;
+      border-radius: 0.5rem;
     }
   </style>
 </head>
@@ -46,3 +45,4 @@
 </body>
 
 </html>
+
